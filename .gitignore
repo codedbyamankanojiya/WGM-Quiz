@@ -1,0 +1,107 @@
+# ====================================================================
+# WGM Quiz — Who's Gonna Be Millionaire Android App (.gitignore)
+# ====================================================================
+
+# ── Gradle & Android Build Outputs ───────────────────────────────────
+build/
+app/build/
+*/build/
+.gradle/
+app/.gradle/
+*/.gradle/
+
+# AGP intermediate directories
+app/src/main/generated/
+.cxx/
+.externalNativeBuild/
+bin/
+gen/
+out/
+
+# KSP (Kotlin Symbol Processing) outputs — Room DAOs are generated here
+**/build/generated/ksp/
+
+# Room Database Schema exports — auto-generated, not tracked
+app/schemas/
+**/schemas/
+
+# ── Compiled & Packaged Artefacts ─────────────────────────────────────
+*.apk
+*.aab
+*.aar
+*.ap_
+*.dex
+*.class
+
+# ── Confidential, Secrets & Environment ──────────────────────────────
+local.properties
+app/local.properties
+*/local.properties
+
+.env
+.env.*
+*.env
+secrets.properties
+app/secrets.properties
+private.properties
+secure.properties
+
+# API keys & service accounts
+google-services.json
+credentials.json
+service-account*.json
+client_secrets.json
+auth_tokens.json
+jwt.json
+
+# Signing keystores & configs (NEVER commit these)
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+*.cer
+*.crt
+signing.properties
+keystore.properties
+release.properties
+
+# ── Android Studio / IntelliJ IDEA ───────────────────────────────────
+.idea/
+app/.idea/
+*/.idea/
+*.iml
+*.iws
+*.ipr
+captures/
+.navigation/
+
+# ── VS Code & Other Editors ───────────────────────────────────────────
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+
+# ── OS & System Generated Files ───────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Logs & Crash Dumps ────────────────────────────────────────────────
+*.log
+hs_err_pid*
+replay_pid*
+
+# ── Kotlin & Gradle Caches ────────────────────────────────────────────
+.kotlin/
+kotlin-js-store/
+
+# Gradle wrapper verification files (generated per machine)
+gradle/wrapper/gradle-wrapper.jar
+# Note: gradle-wrapper.properties IS tracked (defines Gradle version)
